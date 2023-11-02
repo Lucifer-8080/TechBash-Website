@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOTES SECTION</title>
+
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+
+    .header {
+        background-color: #1c77e7fd;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: row;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .sidebar {
+        width: 15%;
+        padding: 20px;
+    }
+
+    .sidebar ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .sidebar ul li {
+        margin: 5px 0;
+    }
+
+    .sidebar ul li a {
+        text-decoration: none;
+        color: #c1f897;
+        display: block;
+        padding: 5px 0;
+    }
+
+    .sidebar ul li a:hover {
+        background-color: #f0f0f0;
+    }
+
+    .content {
+        flex-grow: 1;
+        width: inherit;
+        height: 50%;
+        background: linear-gradient(red, blue, aqua);
+        background-size: cover;
+        text-align: center;
+
+    }
+
+    iframe {
+        width: 100%;
+        height: 600px;
+        border: none;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 0;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 24px;
+    }
+
+    .logo a img {
+        text-decoration: none;
+        color: #fff;
+        height: 50px;
+        margin: 10px;
+    }
+
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+
+    .menu li {
+        margin-right: 20px;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+    }
+
+    .icon a {
+        font-size: 24px;
+        text-decoration: none;
+        color: #fff;
+        cursor: pointer;
+        display: none;
+    }
+
+    @media screen and (max-width: 768px) {
+        .menu ul {
+            flex-direction: column;
+            text-align: center;
+            position: absolute;
+            top: 60px;
+            left: 0;
+
+            width: 100%;
+            display: none;
+        }
+
+        .menu ul.active {
+            display: flex;
+        }
+
+        .menu ul li {
+            margin: 0;
+            padding: 10px;
+        }
+
+        .icon a {
+            display: block;
+            position: absolute;
+            top: 15px;
+            right: 10px;
+        }
+    }
+
+    .navbar .inner_navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
+
+    .navbar .menu ul {
+        display: flex;
+    }
+
+    .navbar .menu ul li a {
+        width: 120px;
+        margin-right: 10px;
+        display: block;
+        text-align: center;
+        padding: 10px;
+        border-radius: 25px;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 2px;
+        transition: all 0.2s ease;
+    }
+
+    .navbar .menu ul li:last-child a {
+        margin-right: 0;
+    }
+
+    .navbar .menu ul li a:hover {
+        background: #6da17f;
+    }
+</style>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+
+                </div>
+                <div class="wrapper">
+                    <div class="navbar">
+                        <div class="inner_navbar" style="text-align: center;">
+
+                            <div class="menu" style="text-align: center;">
+                                <ul>
+                                    <li><a href="/index.html" class="active">Home</a></li>
+                                   
+                                   
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="hamburger">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+        </nav>
+    </header>
+
+    <div class="content">
+        <div class="main-container">
+            <div class="sidebar"
+                style="color:#c70000; background: linear-gradient(rgb(121, 3, 224),tomato,rgba(229, 255, 0, 0.724));">
+                <ul>
+                    <li><a href="#"
+                            onclick="loadPage('./22519-2019-Winter-model-answer-paper[Msbte study resources].pdf')">CSS</a>
+                    </li>
+                    <li><a href="#" onclick="loadPage('./1 AWT Notes.pdf')">AJP</a></li>
+                    <li><a href="#" onclick="loadPage('./22516_OS_WIN-22.pdf')">OSY</a></li>
+                    <li><a href="#"
+                            onclick="loadPage('./22519-2019-Winter-model-answer-paper[Msbte study resources].pdf')">STE</a>
+                    </li>
+                    <li><a href="#" onclick="loadPage('./1000 EST Question.pdf')">EST</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <iframe id="content-iframe" src="./Javascript.mp4"
+                    style="background-color:rgba(179, 101, 101, 0.779);"></iframe>
+            </div>
+        </div>
+    </div>
+    <script>
+        function loadPage(pageUrl) {
+            const contentIframe = document.getElementById('content-iframe');
+            contentIframe.src = pageUrl;
+        }
+
+        // Initial page load
+        loadPage('./bg.png');
+
+    </script>
+</body>
+
+</html>
